@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <img src="logo.svg" alt="Smart Study Planner logo" height="150">
+    </div>
+    <div id="header2">
+       <strong>Get organized and crush your tasks!</strong>
+    </div>
+    <div id="main-section">
+        <div id="input">
+            <h1 id="plan">Plan Your Study Session</h1>
+            <figcaption id="task">Task Name:</figcaption>
+            <input id="task" type="text" placeholder="E.g Math Homework">
+            <figcaption id="task">Due Date:</figcaption>
+            <input type="date" placeholder="Select Due Date">
+            <figcaption id="task">Difficulty:</figcaption>
+            <select name="difficulty" id="difficulty">
+                <option disabled selected>Choose difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+                <button onclick="makePlan()">Generate Plan</button>
+            <div id="Output"> Your Study Plan will come here</div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
