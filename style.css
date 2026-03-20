@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+html {
+    background: linear-gradient(#2365a8, #4A90E2, #0f52c7);
+}
 body{
     min-height: 100vh;
     overflow-y: auto;
@@ -10,7 +13,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(#0f52c7, #4A90E2, #2365a8);
+    background-color: #2365a8;
     background-image: url(sky.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,13 +22,18 @@ body{
 }
 
 #header{
+    margin: 0px;
     display: flex;
     justify-content: center;
     color: white;
     background-color: white;
+    line-height: 0;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     animation: fadeSlideIn 0.6s ease;
+}
+#header img {
+    display: block;  /* removes the gap below the image */
 }
 #header2{
     font-size: 30px;
